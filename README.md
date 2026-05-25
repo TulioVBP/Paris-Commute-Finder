@@ -29,6 +29,22 @@ The $200/month free tier covers roughly 40 searches with 3 destinations and 150 
 
 ## Usage
 
+### Streamlit app (recommended)
+
+```bash
+streamlit run app.py
+```
+
+Opens a browser UI where you can:
+- Type and autocomplete up to 5 destinations
+- Adjust the max commute time with a slider — the map legend and reachability update instantly without re-querying the API
+- Switch transport mode
+- Browse results in an interactive map and ranked tables
+
+The API key can be set in `.env` or pasted directly into the sidebar.
+
+### CLI
+
 ```bash
 # A couple commuting to La Défense and Gare de Lyon, max 40 min
 python main.py -l "La Défense, Paris" -l "Gare de Lyon, Paris" -t 40
@@ -45,7 +61,7 @@ python main.py -l "Opéra, Paris" -l "Vincennes" -t 35 -o my_search.html
 
 The generated `.html` file opens in any browser — click any commune for travel time details.
 
-## Options
+## CLI Options
 
 | Flag | Default | Description |
 |---|---|---|
