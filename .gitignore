@@ -1,0 +1,19 @@
+# Virtual environments
+.venv
+.venv313
+
+# Secrets
+.env
+
+# Generated map output
+output/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# macOS metadata
+.DS_Store
+
+# Claude Code session data
+.claude/
